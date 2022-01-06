@@ -1,1 +1,3 @@
-<p>Hello</p>
+<h5>Selected City Text: {{selectedCityText}}</h5>
+<h5>Selected City Name: {{selectedCity | json}}</h5>
+<p-listbox [options]="cities" [(ngModel)]="selectedCity" optionLabel="name" (onClick)="citySelected($event)"></p-listbox>
